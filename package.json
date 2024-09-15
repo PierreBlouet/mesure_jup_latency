@@ -4,7 +4,8 @@
   "description": "mesure the jupiter self hosted latency between a tx on amm and the updated price on the quote ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx tsx index.ts"
   },
   "author": "",
   "license": "ISC",

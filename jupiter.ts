@@ -55,7 +55,8 @@ export async function jupMesure(TokenIn: string, TokenOut: string) {
     if (newProfit != initialProfit) {
       console.log(
         "self hosted jupiter price updated in : ",
-        performance.now() - startTime
+        performance.now() - startTime,
+        " ms"
       );
       // await pause(300);
       // process.exit();

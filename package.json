@@ -1,0 +1,18 @@
+{
+  "name": "mesure_jup_latency",
+  "version": "1.0.0",
+  "description": "mesure the jupiter self hosted latency between a tx on amm and the updated price on the quote ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@triton-one/yellowstone-grpc": "^0.6.0",
+    "bs58": "^6.0.0",
+    "dotenv": "^16.4.5",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2"
+  }
+}

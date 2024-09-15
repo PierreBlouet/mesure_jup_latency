@@ -12,7 +12,7 @@ export async function getQuote(
 ) {
   const onlyDirectRoute = onlyDirectRouteParam || false;
   const swapMode = swapModeParam || "ExactIn";
-  const metisEndpoint = metisEndpointParam || process.env.METIS_ENDPOINT;
+  const metisEndpoint = metisEndpointParam || process.env.JUPITER_ENDPOINT;
   const excludeDexes = excludeDex ? excludeDex.join(",") : "";
 
   const response = await fetch(

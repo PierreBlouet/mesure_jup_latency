@@ -6,6 +6,8 @@ import Client, {
 import bs58 from "bs58";
 import { jupMesure } from "./jupiter";
 
+require("dotenv").config();
+
 async function subrscribe() {
   const client = new Client(
     process.env.TRITON_ENDPOINT || "",
@@ -28,7 +30,7 @@ async function subrscribe() {
   stream.on("data", async (data) => {
     if (data.slot) {
       if (data.slot.status === 0) {
-        console.log("Slot: ", data.slot.slot);
+        // console.log("Slot: ", data.slot.slot);
       }
     }
 

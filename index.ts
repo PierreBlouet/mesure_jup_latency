@@ -15,7 +15,8 @@ async function subrscribe() {
     undefined
   );
 
-  const MINT = process.env.AMM_MINT || "";
+  const AMM = process.env.AMM || "";
+  const MINT = process.env.MINT || "";
 
   // Fetch and display the version information
   const version = await client.getVersion();
@@ -50,7 +51,7 @@ async function subrscribe() {
     accounts: {},
     transactions: {
       accountsSubscription: {
-        accountInclude: [MINT],
+        accountInclude: [AMM],
         accountExclude: [],
         accountRequired: [],
         vote: false,

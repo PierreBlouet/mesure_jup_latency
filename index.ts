@@ -35,8 +35,6 @@ async function subrscribe() {
     }
 
     if (data.transaction) {
-      console.log("Slot of transaction: ", data.transaction.slot);
-
       const txnSignature = bs58.encode(
         Buffer.from(data.transaction.transaction.signature)
       );
